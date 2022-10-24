@@ -35,3 +35,7 @@ export class Tasks {
     };
   }
 }
+
+export class listaTasks extends Tasks {
+  listaTasks = Tasks;
+}

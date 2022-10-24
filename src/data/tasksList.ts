@@ -1,7 +1,7 @@
-import { Tasks } from "../models/tasks";
+import { listaTasks, Tasks } from "../models/tasks";
 import { User } from "../models/user";
 
-export const tasksList = [
+export const tasksList: listaTasks = [
   new Tasks("teste 01", "teste 01"),
   new Tasks("teste 02", "teste 02"),
 ];

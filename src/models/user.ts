@@ -8,7 +8,7 @@ export class User {
     private _name: string,
     private _pass: string,
     private _Rpass: string,
-    private _tasks: Tasks
+    public _tasks?: Tasks
   ) {
     this._userId = createUuid();
     this._tasks = this._tasks;
@@ -42,9 +42,9 @@ export class User {
     return this._userId;
   }
 
-  public get tasks(): Tasks {
-    return this._tasks;
-  }
+  // public get tasks(): Tasks {
+  //   return this._tasks
+  // }
 
   public getUser() {
     return {
