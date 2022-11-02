@@ -14,7 +14,8 @@ app.use(cors());
 
 app.use("/tasks", tasksRoutes);
 app.use("/user", userRoutes);
+app.use("/", userRoutes);
 
-app.listen(port, () => {
+app.listen(process.env.PORT || 3000, () => {
   console.log("API rodando na porta " + process.env.PORT);
 });
