@@ -4,9 +4,9 @@ import * as dotenv from "dotenv";
 import { tasksRoutes } from "./routes/tasks.routes";
 import { userRoutes } from "./routes/user.routes";
 
-dotenv.config();
-
 const port = process.env.PORT || 3000;
+
+dotenv.config();
 
 const app = express();
 app.use(express.json());
